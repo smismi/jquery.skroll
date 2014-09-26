@@ -1,32 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>query._</title>
-
-
-     
-
-    <script src="js/jquery.2.0.js"></script>
-
-    <script type="text/javascript">
-        document.write("<script src=\"js\/jquery._.js?" + (new Date()).getTime() + "\"><\/script>");
-        document.write("<link rel=\"stylesheet\" href=\"css\/style.css?" + (new Date()).getTime() + "\" type=\"text/css\">");
-    </script>
-
-
+	<meta charset="utf-8">
+	<title>query.skroll</title>
+	<script src="js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript"> document.write("<script src=\"js\/jquery.skroll.js?" + (new Date()).getTime() + "\"><\/script>");
+	document.write("<link rel=\"stylesheet\" href=\"css\/style.css?" + (new Date()).getTime() + "\" type=\"text/css\">");
+	document.write("<link rel=\"stylesheet\" href=\"css\/skroll.css?" + (new Date()).getTime() + "\" type=\"text/css\">"); </script>
 </head>
-<body>   
- 
-<h1>PLUGIN</h1>
+<body><h1>SKROLL PLUGIN</h1>
 
- 
+<div id="wrapper" class="wrapper">
+	<div class="scroller">
 
+
+			<img src="http://placehold.it/1000x500/" alt=""/>
+
+
+	</div>
+</div>
 <script type="text/javascript">
-    $('#selector')._();
-</script>
 
+//    $('#wrapper').skroll({ a:1, b:2, c:3 });
+
+</script>
 </body>
 </html>
-
-
