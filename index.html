@@ -4,25 +4,75 @@
 	<meta charset="utf-8">
 	<title>query.skroll</title>
 	<script src="js/jquery-2.1.1.min.js"></script>
-	<script type="text/javascript"> document.write("<script src=\"js\/jquery.skroll.js?" + (new Date()).getTime() + "\"><\/script>");
-	document.write("<link rel=\"stylesheet\" href=\"css\/style.css?" + (new Date()).getTime() + "\" type=\"text/css\">");
-	document.write("<link rel=\"stylesheet\" href=\"css\/skroll.css?" + (new Date()).getTime() + "\" type=\"text/css\">"); </script>
+	<!--<script src="js/jquery.skroll.js"></script>-->
+	<script src="js/src/core.js"></script>
+	<script src="js/src/autoUpdate.js"></script>
+
+
+
+	<script>
+
+		document.write("<link rel=\"stylesheet\" href=\"css\/style.css?" + (new Date()).getTime() + "\" type=\"text/css\">");
+		document.write("<link rel=\"stylesheet\" href=\"css\/skroll.css?" + (new Date()).getTime() + "\" type=\"text/css\">");
+
+	</script>
 </head>
 <body><h1>SKROLL PLUGIN</h1>
 
-<div id="wrapper" class="wrapper">
-	<div class="scroller">
 
 
-			<img src="http://placehold.it/1000x500/" alt=""/>
 
 
+
+	<div class="wrapper wrapper_1">
+		<div class="scroller">
+			<img src="http://placehold.it/1000x500/" alt="" style="display: block; margin: 0; padding: 0"/>
+		</div>
 	</div>
-</div>
-<script type="text/javascript">
 
-//    $('#wrapper').skroll({ a:1, b:2, c:3 });
 
-</script>
+
+	<!--<div class="wrapper test_1">-->
+		<!--<div class="scroller">-->
+			<!--<img src="http://placehold.it/1000x500/" alt="" style="display: block; margin: 0; padding: 0"/>-->
+		<!--</div>-->
+	<!--</div>-->
+
+	<!--<div class="wrapper test_1">-->
+		<!--<div class="scroller">-->
+			<!--<img src="http://placehold.it/1000x500/" alt="" style="display: block; margin: 0; padding: 0"/>-->
+		<!--</div>-->
+	<!--</div>-->
+
+	<!--<div class="wrapper test_1">-->
+		<!--<div class="scroller">-->
+			<!--<img src="http://placehold.it/1000x500/" alt="" style="display: block; margin: 0; padding: 0"/>-->
+		<!--</div>-->
+	<!--</div>-->
+
+
+	<script type="text/javascript">
+
+
+		vScroll = $(".wrapper_1")
+				.baron({
+					scroller: '.scroller',
+					barOnCls: 'baron'
+				})
+				.baron({
+					direction: 'h',
+					barOnCls: 'baron_h'
+				})
+				.autoUpdate();
+
+
+//		_scroll = $(".test_1")
+//				.skroll({
+//					direction: 'both',
+//					scroller: '.scroller',
+//					barOnCls: 'baron'
+//				});
+
+	</script>
 </body>
 </html>
